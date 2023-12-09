@@ -1,6 +1,7 @@
 import sqlite3
 import hashlib
 from tkinter import *
+import ttkbootstrap as ttk
 
 # Function to hash passwords using SHA-256
 def hash_password(password):
@@ -43,8 +44,11 @@ def display_passwords():
         print(row)
 
 # GUI Setup
-root = Tk()
-root.title('Password Manager')
+root = ttk.Window(themename="pulse")
+root.title("Password Manager")
+root.geometry("720x250")
+
+
 
 website_label = Label(root, text='Website:')
 website_label.grid(row=0, column=0)
@@ -61,10 +65,11 @@ password_label.grid(row=2, column=0)
 password_entry = Entry(root, show='*')
 password_entry.grid(row=2, column=1)
 
-add_button = Button(root, text='Add Password', command=add_password)
+
+add_button = Button(root, text='Add Password', font=("Helvetica", 9), command=add_password)
 add_button.grid(row=3, column=0, columnspan=2, pady=10)
 
-display_button = Button(root, text='Display Passwords', command=display_passwords)
+display_button = Button(root, text='Display Passwords',font=("Helvetica", 9), command=display_passwords)
 display_button.grid(row=4, column=0, columnspan=2, pady=10)
 
 create_table()  # Create the table if not exists
