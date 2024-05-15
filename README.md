@@ -1,7 +1,6 @@
 # Password Manager
 
-This password manager application is designed to help you securely store and manage your website passwords. It utilizes a combination of Python, SQL, and a graphical user interface (GUI) to provide a user-friendly experience.
-
+A password manager application designed to help you securely store and manage your website passwords.
 ![image](https://github.com/gappeah/Password-Manager/assets/114095068/06fbf159-b0c4-4fc1-bb87-da99bd46cc09)
 
 
